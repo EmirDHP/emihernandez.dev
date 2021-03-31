@@ -129,8 +129,8 @@
 
 
 		<!-- Contact -->
-<div id="contact">
-		<form action="send.php" method="POST" class="inner">
+<!-- <div id="contact">
+		<form action="send.php" method="post" class="inner">
 			<h2 style="text-align: center;">CONTACTO</h2>
 			<input type="text" name="nombre" placeholder="Nombre" required>
 			<br>
@@ -142,7 +142,23 @@
 			<br>
 			<input type="submit" value="ENVIAR" id="button" style="width: 40%;">
 		</form>
-</div>
+</div> -->
+
+	 <div id="contact">
+		<form action="send.php" method="post" class="inner">
+			<h2 style="text-align: center;">CONTACTO</h2>
+			<input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>>
+			<br>
+			<input type="email" id="email" name="visitor_email" placeholder="Correo" required>
+			<br>
+			<input type="text" id="phone" name="telefono" placeholder="Teléfono" required>
+			<br>
+			<textarea id="message" name="visitor_message" placeholder="Escriba aquí su mensaje." required></textarea>
+			<br>
+			<input type="submit" value="ENVIAR" id="button" style="width: 40%;">
+		</form>
+	</div>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">

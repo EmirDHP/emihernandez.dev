@@ -9,6 +9,9 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/e.png" />
+		<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
 	</head>
 	<body class="is-preload">
 
@@ -23,20 +26,19 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="inicio.html">INICIO</a></li>
-					<li><a href="#about">ACERCA DE MI</a></li>
-					<li><a href="#education">EDUCACIÓN</a></li>
-					<li><a href="#resume">EXPERIENCIA</a></li>
-					<li><a href="#contact">CONTANCTO</a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#about">Acerca de mí</a></li>
+					<li><a href="#education">Educación</a></li>
+					<li><a href="#resume">Experencia</a></li>
+					<li><a href="#contact">Contacto</a></li>
 					<!-- <li><a href="elements.html">GALERÍA DE FOTOS</a></li> -->
-					<!-- <li><a href="generic.html">Generic</a></li> -->
 				</ul>
 			</nav>
 
 		<!-- Banner -->		
 			<section id="banner">				
 				<div class="inner">
-						<span class="avatar"><img src="images/emir.jpg" alt="" width="200px" style="border-radius: 100%;"/></span>
+						<span class="avatar"><img src="images/it's me.jpg" alt="" width="200px" style="border-radius: 100%;"/></span>
 						<h1>Emir Hernández</h1>
 					<p>Desarrollador y Estudiante</p>
 					<section>
@@ -59,6 +61,7 @@
 						<header class="special">						
 							<h2>DESARROLLADOR</h2>
 							<p style="text-align: justify;">¡Hola mundo! mi nombre es <b>Emir Daniel Hernández Pérez</b>, soy programador y estudiante, mi objetivo es ofrecer mis habilidades al servicio de los demás, además de desempeñarme y mejorar mis conocimientos como desarrollador de software multiplataforma, obteniendo como resultado una mayor experiencia como desarrollador.</p>
+							<p><a href="images/documents/Curriculum_Vitae.pdf" target="_blank"><button type="" class="btn btn-light" data-mdb-ripple-color="dark">Curriculum Vitae</button></a></p>							
 						</header>
 					</div>
 				</div>
@@ -86,7 +89,7 @@
 				</div>
 			</section>
 		</div>
-		<!-- Testimonials -->
+		<!-- Experience -->
 			<section id="resume" class="wrapper">
 				<div class="inner">
 					<header class="special">
@@ -105,8 +108,8 @@
 						</section>
 						<section>
 							<div class="content">
-								<h4><b>Desarrollo web</b></h4>
-								<h4><b>UNIVERSIDAD TECNOLÓGICA DE TAMAULIPAS NORTE</b></h4>	
+								<h4><b><a href="http://201.174.6.168/EstadiasUTTN" target="_blank">Desarrollo web</a></b></h4>
+								<h4><b><a href="http://201.174.6.168/EstadiasUTTN" target="_blank">UNIVERSIDAD TECNOLÓGICA DE TAMAULIPAS NORTE</a></b></h4>	
 								<blockquote>
 									
 									<p>Desarrollo de un módulo para optimizar la creación de cartas de presentación. <b>2020</b></p>
@@ -127,15 +130,28 @@
 				</div>
 			</section>
 
-
 		<!-- Contact -->
 		<!-- I'm still working on this part -->
+		<div id="contact">
+			<form action="send.php" method="post" class="inner">
+				<h2 style="text-align: center;">CONTACTO</h2>
+				<input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
+				<br>
+				<input type="email" id="email" name="visitor_email" placeholder="Correo" required>
+				<br>
+				<input type="text" id="phone" name="telefono" placeholder="Teléfono" required>
+				<br>
+				<textarea id="message" name="visitor_message" placeholder="Escriba aquí su mensaje." required></textarea>
+				<br>
+				<input type="submit" value="ENVIAR" id="button" style="width: 40%;">
+			</form>
+		</div>
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div style="text-align: center;">
-						&copy; Todos los derechos reservados - Emir Daniel Hernández Pérez.
+						&copy; Todos los derechos reservados - <a href="index.html" style="color: white;">Emir Daniel Hernández Pérez.</a>
 					</div>
 				</div>
 			</footer>
@@ -146,6 +162,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- CV -->
+		  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="./script.js"></script>
 
 	</body>
 </html>
